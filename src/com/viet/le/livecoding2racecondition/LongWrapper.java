@@ -8,7 +8,7 @@ public class LongWrapper {
     public LongWrapper(long l){
         this.l = l;
     }
-    public long getValue(){
+    public synchronized long getValue(){
         return l;
     }
     //remove 'synchronized' and run the main method and the result will be DIFFERENT all the time
